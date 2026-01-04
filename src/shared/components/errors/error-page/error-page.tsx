@@ -2,6 +2,6 @@ interface Props {
   error?: Error
 }
 
-export const ErrorPage: React.FC<Props> = ({ error }) => {
+export const ErrorPage: React.FC<Props> = () => {
   return null
 }
