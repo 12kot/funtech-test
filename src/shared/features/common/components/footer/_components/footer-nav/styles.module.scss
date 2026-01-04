@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   display: flex;
   align-items: center;
@@ -6,5 +8,9 @@
   .navLink {
     text-transform: none;
     color: var(--text-caption);
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    gap: 28px;
   }
 }

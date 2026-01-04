@@ -1,5 +1,23 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   gap: 24px;
   display: flex;
   align-items: center;
+
+  .action {
+    width: 180px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 12px;
+    
+    @media screen and (max-width: br.$tablet) {
+      width: 135px;
+      border-radius: 9px;
+    }
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    gap: 18px;
+  }
 }

@@ -1,6 +1,12 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
-    font-weight: 500;
-    line-height: 100%;
-    font-size: 0.875rem;
-    color: var(--text-primary-invert);
+  font-weight: 500;
+  line-height: 100%;
+  font-size: 0.875rem;
+  color: var(--text-primary-invert);
+
+  @media screen and (max-width: br.$tablet) {
+    font-size: 0.625rem;
   }
+}

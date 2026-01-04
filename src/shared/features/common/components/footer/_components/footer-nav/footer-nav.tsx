@@ -14,12 +14,13 @@ interface NavLink {
 
 interface Props {
   links: NavLink[]
+  className?: string
 }
 
-export const FooterNav: React.FC<Props> = ({ links }) => {
+export const FooterNav: React.FC<Props> = ({ className, links }) => {
   return (
     <nav>
-      <UL className={styles.container}>
+      <UL className={cn(styles.container, className)}>
         {links.map(({ to, label, target, linkClassName }) => (
           <LI key={to}>
             <Link to={to} className={cn(styles.navLink, linkClassName)} target={target}>

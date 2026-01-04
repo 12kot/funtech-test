@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   width: 100%;
   padding: 88px var(--page-padding-horizontal) 86px;
@@ -5,5 +7,13 @@
 
   .divider {
     margin-top: 25px;
+
+    @media screen and (max-width: br.$tablet) {
+      margin-top: 21px;
+    }
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    padding: 60px var(--page-padding-horizontal);
   }
 }

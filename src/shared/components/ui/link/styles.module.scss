@@ -1,11 +1,18 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.67125rem;
-  
+
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--text-secondary);
   font-family: var(--font-family-secondary);
+
+  @media screen and (max-width: br.$tablet) {
+    font-size: 0.7925rem;
+    line-height: 1.8875rem;
+  }
 }

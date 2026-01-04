@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   width: 100%;
   background-color: var(--surface-secondary);
@@ -15,5 +17,13 @@
     &:active {
       cursor: grabbing;
     }
+
+    @media screen and (max-width: br.$tablet) {
+      padding: 50px var(--page-padding-horizontal);
+    }
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    padding: 50px 0 0;
   }
 }

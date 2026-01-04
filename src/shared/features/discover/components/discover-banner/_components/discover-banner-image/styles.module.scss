@@ -1,7 +1,13 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   width: 369px;
   height: 100%;
   object-fit: cover;
   border-radius: 15.79px;
   background-color: var(--surface-secondary);
+
+  @media screen and (max-width: br.$tablet) {
+    width: 263px;
+  }
 }

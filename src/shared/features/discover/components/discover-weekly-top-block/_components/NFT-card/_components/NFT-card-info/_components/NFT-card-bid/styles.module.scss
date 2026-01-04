@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   margin-top: 20px;
 
@@ -13,6 +15,10 @@
       font-size: 0.875rem;
       line-height: 100%;
       color: var(--text-muted);
+
+      @media screen and (max-width: br.$tablet) {
+        font-size: 0.6875rem;
+      }
     }
 
     .value {
@@ -25,12 +31,24 @@
         width: 22px;
         height: 22px;
       }
-    }
 
-    .amount {
-      font-weight: 500;
-      font-size: 1rem;
-      line-height: 150%;
+      .amount {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 150%;
+      }
+
+      @media screen and (max-width: br.$tablet) {
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+
+        .amount {
+          font-size: 0.75rem;
+          line-height: 0.875rem;
+        }
+      }
     }
   }
 
@@ -39,5 +57,14 @@
     line-height: 150%;
     font-size: 0.875rem;
     padding: 14.5px 24.5px;
+
+    @media screen and (max-width: br.$tablet) {
+      padding: 11px 18px;
+      font-size: 0.6875rem;
+    }
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    margin-top: 14px;
   }
 }

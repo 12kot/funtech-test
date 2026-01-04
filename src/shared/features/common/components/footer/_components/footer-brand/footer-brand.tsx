@@ -23,7 +23,7 @@ export const FooterBrand: React.FC = () => {
         <SVGLogoFullInvert />
       </Link>
 
-      <FooterNav links={links} />
+      <FooterNav links={links} className={styles.nav} />
     </section>
   )
 }

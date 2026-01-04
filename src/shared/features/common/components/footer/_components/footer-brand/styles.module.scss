@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   display: flex;
   align-items: center;
@@ -7,5 +9,17 @@
     display: flex;
     align-items: center;
     height: 65px;
+
+    @media screen and (max-width: br.$tablet) {
+      height: 46px;
+    }
+  }
+
+  .nav {
+    gap: 70px;
+
+    @media screen and (max-width: br.$tablet) {
+      gap: 50px;
+    }
   }
 }

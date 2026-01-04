@@ -1,5 +1,11 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   width: 100%;
   background-color: var(--surface-primary);
   padding: 120px var(--page-padding-horizontal);
+
+  @media screen and (max-width: br.$tablet) {
+    padding: 90px var(--page-padding-horizontal);
+  }
 }

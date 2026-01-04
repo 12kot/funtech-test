@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   border: none;
   cursor: pointer;
@@ -30,6 +32,15 @@
     padding: 19px 23px;
     font-size: 1.25rem;
     letter-spacing: 1px;
+
+    @media screen and (max-width: br.$tablet) {
+      font-size: 1rem;
+      padding: 14px 17px;
+    }
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    border-radius: 9px;
   }
 }
 

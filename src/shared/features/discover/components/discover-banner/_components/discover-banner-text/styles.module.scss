@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   display: flex;
   flex-direction: column;
@@ -12,5 +14,11 @@
     font-size: 1.25rem;
     line-height: 1.375rem;
     color: var(--text-disabled);
+    
+    @media screen and (max-width: br.$tablet) {
+      margin-top: 15px;
+      font-size: 0.9375rem;
+      line-height: 1.03125rem;
+    }
   }
 }

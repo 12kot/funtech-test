@@ -9,11 +9,11 @@ export const DiscoverBannerActions: React.FC = () => {
 
   return (
     <section className={styles.container}>
-      <Button colorScheme="ghost" size="xl">
+      <Button colorScheme="ghost" size="xl" className={styles.action}>
         {t('banner.actions.exploreMore')}
       </Button>
 
-      <Button colorScheme="outlined-alt" size="xl">
+      <Button colorScheme="outlined-alt" size="xl" className={styles.action}>
         {t('banner.actions.sellArtwork')}
       </Button>
     </section>
