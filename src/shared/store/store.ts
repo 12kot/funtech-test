@@ -1,14 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-import { commonReducer } from 'shared/features/common'
+import { discoverReducer, discoverApi } from 'shared/features/discover'
 
 export const Reducers = {
-  common: commonReducer,
+  discover: discoverReducer,
+  [discoverApi.reducerPath]: discoverApi.reducer,
 }
 
 export const store = configureStore({
   reducer: Reducers,
   middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware()
+    return getDefaultMiddleware().concat(discoverApi.middleware)
   },
 })

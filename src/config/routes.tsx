@@ -1,7 +1,16 @@
 import { ReactElement } from 'react'
 import { Navigate } from 'react-router-dom'
 
-import { CreatorsPageLazy, DiscoverPageLazy, SellPageLazy, StatsPageLazy } from 'app'
+import {
+  AboutUsPageLazy,
+  ContactPageLazy,
+  CreatorsPageLazy,
+  DiscoverPageLazy,
+  PrivacyPolicyPageLazy,
+  SellPageLazy,
+  StatsPageLazy,
+  TermConditionsPageLazy,
+} from 'app'
 
 export enum ERootRoutes {
   DISCOVER = '/',
@@ -51,16 +60,16 @@ export const routes: TRoutes = {
     element: <StatsPageLazy />,
   },
   [ERootRoutes.PRIVACY_POLICY]: {
-    element: <StatsPageLazy />,
+    element: <PrivacyPolicyPageLazy />,
   },
   [ERootRoutes.TERMS_CONDITIONS]: {
-    element: <StatsPageLazy />,
+    element: <TermConditionsPageLazy />,
   },
   [ERootRoutes.ABOUT_US]: {
-    element: <StatsPageLazy />,
+    element: <AboutUsPageLazy />,
   },
   [ERootRoutes.CONTACT]: {
-    element: <StatsPageLazy />,
+    element: <ContactPageLazy />,
   },
   [ERootRoutes.ALL]: {
     element: <Navigate to={ERootRoutes.DISCOVER} replace />,

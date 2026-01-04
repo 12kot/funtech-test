@@ -1,0 +1,9 @@
+.container {
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

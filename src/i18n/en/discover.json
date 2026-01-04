@@ -24,6 +24,16 @@
     }
   },
 
+  "weekly": {
+    "title": "Weekly - Top NFT",
+
+    "card": {
+      "time": "{{ hours }}h {{ minutes }}m {{ seconds }}s",
+      "currentBid": "Current Bid",
+      "placeBid": "Place Bid"
+    }
+  },
+
   "banner": {
     "title": "Create and Sell NFTs",
     "subtitle": "World’s Largest NFT Place",

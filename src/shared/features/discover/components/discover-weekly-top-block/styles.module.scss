@@ -1,5 +1,19 @@
 .container {
   width: 100%;
   background-color: var(--surface-secondary);
-  padding: 70px 0;
+  padding: 70px 0 0;
+
+  .title {
+    text-align: center;
+    color: var(--text-placeholder);
+  }
+
+  .swiper {
+    cursor: grab;
+    padding: 70px var(--page-padding-horizontal);
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
 }

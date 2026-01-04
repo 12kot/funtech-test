@@ -4,16 +4,23 @@ import { forwardRef, useImperativeHandle, useRef } from 'react'
 import type { SwiperProps } from 'swiper/react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import type { Swiper as SwiperType } from 'swiper'
-import { FreeMode, Mousewheel } from 'swiper/modules'
+import { FreeMode, Mousewheel, Autoplay } from 'swiper/modules'
+
+import { cn, vibrate } from 'shared/utils'
 
 import styles from './styles.module.scss'
-import { cn, vibrate } from 'shared/utils'
+
+const autoplayOptions = {
+  delay: 500,
+  pauseOnMouseEnter: true,
+}
+
 
 interface GenericSwiperProps<T> extends SwiperProps {
   id: string
-  items: T[]
+  items: (T & { id: string })[]
+  autoPlay?: boolean
   disableVibrate?: boolean
-  lastSlide?: React.ReactNode
   renderItem: (item: T, index: number) => React.ReactNode
   className?: string
   slideClassName?: string
@@ -26,17 +33,17 @@ function GenericSwiperInner<T>(
   {
     id,
     items,
-    lastSlide,
-    renderItem,
+    autoPlay,
     className,
     disableVibrate,
     slideClassName,
-    onIndexChange,
     slidesPerView = 'auto',
     spaceBetween = 8,
-    speed = 600,
+    speed = 1000,
     disableFreeMode,
     disableMousewheel,
+    renderItem,
+    onIndexChange,
     ...rest
   }: GenericSwiperProps<T>,
   ref: React.Ref<SwiperType | null>
@@ -59,12 +66,14 @@ function GenericSwiperInner<T>(
   }
 
   const modules = []
+  if (autoPlay) modules.push(Autoplay)
   if (!disableMousewheel) modules.push(Mousewheel)
   if (!disableFreeMode) modules.push(FreeMode)
 
   return (
     <Swiper
       id={id}
+      autoplay={autoPlay ? autoplayOptions : false}
       speed={speed}
       freeMode={disableFreeMode ? { enabled: false } : freeModeOptions}
       modules={modules}
@@ -82,11 +91,10 @@ function GenericSwiperInner<T>(
       {...rest}
     >
       {items.map((item, index) => (
-        <SwiperSlide className={cn(styles.slide, slideClassName)} key={index}>
+        <SwiperSlide className={cn(styles.slide, slideClassName)} key={item.id}>
           {renderItem(item, index)}
         </SwiperSlide>
       ))}
-      {lastSlide && <SwiperSlide className={cn(styles.slide, slideClassName)}>{lastSlide}</SwiperSlide>}
     </Swiper>
   )
 }
