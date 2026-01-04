@@ -68,7 +68,50 @@
   @media screen and (max-width: br.$tablet) {
     --page-padding-horizontal: 67px;
 
+    --h1-size: 3.375rem;
+    --h1-height: 3.875rem;
+
     --h2-size: 2rem;
     --h2-height: 2.25rem;
+
+    --h3-size: 1.625rem;
+    --h3-height: 1.875rem;
+
+    --h4-size: 1rem;
+    --h4-height: 1.125rem;
+
+    --b-size: 0.8125rem;
+    --b-height: 1.125rem;
+
+    --p-size: 0.8125rem;
+    --p-height: 1.125rem;
+
+    --span-size: 0.5625rem;
+    --span-height: 0.8125rem;
+  }
+
+  @media screen and (max-width: br.$mobile) {
+    --page-padding-horizontal: 30px;
+
+    --h1-size: 3rem;
+    --h1-height: 3.375rem;
+
+    --h2-size: 1.5rem;
+    --h2-height: 1.5rem;
+
+    --h3-size: 1.625rem;
+    --h3-height: 1.875rem;
+
+    --h4-size: 1rem;
+    --h4-height: 1.125rem;
+
+    --b-size: 0.875rem;
+    --b-height: 1rem;
+
+    --p-size: 0.6875rem;
+    --p-height: 1.10625rem;
+
+    --span-size: 0.5625rem;
+    --span-height: 0.8125rem;
   }
 }

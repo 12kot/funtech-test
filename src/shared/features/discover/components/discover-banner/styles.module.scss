@@ -2,6 +2,7 @@
 
 .container {
   display: flex;
+  position: relative;
   justify-content: space-between;
 
   width: 100%;
@@ -15,11 +16,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: br.$mobile) {
+      justify-content: center;
+    }
   }
 
   @media screen and (max-width: br.$tablet) {
     height: 233px;
     border-radius: 22px;
     padding: 23px 23px 23px 47px;
+  }
+
+  @media screen and (max-width: br.$mobile) {
+    padding: 22px;
+    height: 211px;
+    border-radius: 14px;
+    flex-direction: column;
   }
 }

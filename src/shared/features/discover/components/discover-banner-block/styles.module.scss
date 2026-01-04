@@ -8,4 +8,8 @@
   @media screen and (max-width: br.$tablet) {
     padding: 90px var(--page-padding-horizontal);
   }
+
+  @media screen and (max-width: br.$mobile) {
+    padding: 70px var(--page-padding-horizontal) 253px;
+  }
 }

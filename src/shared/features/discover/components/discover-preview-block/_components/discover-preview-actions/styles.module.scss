@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   margin-top: 44px;
 
@@ -7,5 +9,22 @@
 
   .exploreMore {
     font-family: var(--font-family-primary);
+  }
+
+  .createNFT {
+    @media screen and (max-width: br.$mobile) {
+      padding: 16px;
+    }
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    gap: 16px;
+    margin-top: 36px;
+  }
+
+  @media screen and (max-width: br.$mobile) {
+    gap: 17px;
+    justify-content: center;
+    margin-top: 41px;
   }
 }

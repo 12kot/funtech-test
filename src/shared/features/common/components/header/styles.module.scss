@@ -1,4 +1,5 @@
 @use 'shared/styles/utils' as *;
+@use 'shared/styles/breakpoints' as br;
 
 .container {
   display: flex;
@@ -27,12 +28,69 @@
         width: 38px;
         height: 38px;
       }
+
+      @media screen and (max-width: br.$mobile) {
+        display: none;
+      }
+    }
+
+    .fullLogo {
+      display: none;
+
+      svg {
+        height: 46px;
+      }
+
+      @media screen and (max-width: br.$mobile) {
+        display: flex;
+      }
+    }
+
+    .nav {
+      @media screen and (max-width: br.$mobile) {
+        display: none;
+      }
     }
 
     .navList {
       gap: 32px;
       display: flex;
       align-items: center;
+
+      .link {
+        @media screen and (max-width: br.$tablet) {
+          line-height: 1rem;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+
+  .walletButton {
+    @media screen and (max-width: br.$mobile) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    top: 17px;
+    padding: 11px var(--page-padding-horizontal);
+  }
+
+  @media screen and (max-width: br.$mobile) {
+    top: 0;
+    border-radius: 0;
+    padding: 30px var(--page-padding-horizontal);
+  
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 2 * var(--page-padding-horizontal));
+      height: 0.5px;
+      background-color: #CBCBCB;
     }
   }
 
@@ -42,4 +100,9 @@
 .scrolled {
   top: 0;
   background-color: var(--surface-base);
+
+  @media screen and (max-width: br.$mobile) {
+    top: 0;
+    background-color: var(--surface-primary);
+  }
 }

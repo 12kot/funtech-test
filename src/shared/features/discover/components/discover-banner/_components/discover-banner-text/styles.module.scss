@@ -6,6 +6,10 @@
 
   .title {
     color: var(--text-primary-invert);
+
+    @media screen and (max-width: br.$mobile) {
+      text-align: center;
+    }
   }
 
   .subtitle {
@@ -14,11 +18,18 @@
     font-size: 1.25rem;
     line-height: 1.375rem;
     color: var(--text-disabled);
-    
+
     @media screen and (max-width: br.$tablet) {
       margin-top: 15px;
       font-size: 0.9375rem;
       line-height: 1.03125rem;
+    }
+
+    @media screen and (max-width: br.$mobile) {
+      text-align: center;
+      margin-top: 9px;
+      font-size: 0.625rem;
+      line-height: 130%;
     }
   }
 }

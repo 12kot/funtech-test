@@ -15,9 +15,20 @@
       width: 135px;
       border-radius: 9px;
     }
+    
+    @media screen and (max-width: br.$mobile) {
+      width: 91px;
+      border-radius: 6px;
+    }
   }
 
   @media screen and (max-width: br.$tablet) {
     gap: 18px;
+  }
+  
+  @media screen and (max-width: br.$mobile) {
+    gap: 14px;
+    margin-top: 22px;
+    justify-content: center;
   }
 }

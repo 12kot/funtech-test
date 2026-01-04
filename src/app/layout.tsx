@@ -10,9 +10,7 @@ export const AppLayout: React.FC<Props> = ({ children }) => {
   return (
     <main className={styles.container}>
       <AppHeader />
-
       {children}
-
       <AppFooter />
     </main>
   )

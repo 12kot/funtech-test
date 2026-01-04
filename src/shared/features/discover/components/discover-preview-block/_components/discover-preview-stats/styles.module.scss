@@ -1,3 +1,5 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   margin-top: 81px;
 
@@ -12,13 +14,29 @@
     .title {
       font-family: var(--font-family-quaternary);
     }
-    
+
     .subtitle {
       margin-top: 10px;
       line-height: 1rem;
       font-size: 0.75rem;
       color: var(--text-quaternary);
       font-family: var(--font-family-secondary);
+
+      @media screen and (max-width: br.$tablet) {
+        margin-top: 8px;
+
+        font-size: 0.5625rem;
+        line-height: 0.8125rem;
+      }
     }
+  }
+
+  @media screen and (max-width: br.$tablet) {
+    gap: 40px;
+    margin-top: 58px;
+  }
+  
+  @media screen and (max-width: br.$mobile) {
+    display: none;  
   }
 }

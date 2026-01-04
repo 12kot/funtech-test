@@ -1,29 +1,25 @@
-import { useTranslation } from 'react-i18next'
-
+import { cn } from 'shared/utils'
 import { EAllAppRoutes } from 'config'
 import { Link } from 'shared/components/ui'
 import { SVGLogoFullInvert } from 'shared/assets/svg'
 
 import { FooterNav } from '..'
 import styles from './styles.module.scss'
+import { FooterNavLink } from '../../types'
 
-export const FooterBrand: React.FC = () => {
-  const { t } = useTranslation('common')
+interface Props {
+  links: FooterNavLink[]
+  navigationClassName?: string
+}
 
-  const links = [
-    { to: EAllAppRoutes.HOME, label: t('footer.navigation.privacyPolicy') },
-    { to: EAllAppRoutes.CREATORS, label: t('footer.navigation.termsConditions') },
-    { to: EAllAppRoutes.SELL, label: t('footer.navigation.aboutUs') },
-    { to: EAllAppRoutes.STATS, label: t('footer.navigation.contact') },
-  ]
-
+export const FooterBrand: React.FC<Props> = ({ links, navigationClassName }) => {
   return (
     <section className={styles.container}>
       <Link to={EAllAppRoutes.HOME} className={styles.logo}>
         <SVGLogoFullInvert />
       </Link>
 
-      <FooterNav links={links} className={styles.nav} />
+      <FooterNav links={links} className={cn(styles.nav, navigationClassName)} />
     </section>
   )
 }

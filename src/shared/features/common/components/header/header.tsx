@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import { cn } from 'shared/utils'
 import { EAllAppRoutes } from 'config'
-import { SVGLogoIcon } from 'shared/assets/svg'
+import { SVGLogoFull, SVGLogoIcon } from 'shared/assets/svg'
 import { Button, Header, LI, Link, UL } from 'shared/components/ui'
 
 import styles from './styles.module.scss'
@@ -55,12 +55,16 @@ export const AppHeader: React.FC = () => {
         <Link to={EAllAppRoutes.HOME} className={styles.logo}>
           <SVGLogoIcon />
         </Link>
+        
+        <Link to={EAllAppRoutes.HOME} className={styles.fullLogo}>
+          <SVGLogoFull />
+        </Link>
 
-        <nav>
+        <nav className={styles.nav}>
           <UL className={styles.navList}>
             {navLinks.map(({ to, label }) => (
               <LI key={to}>
-                <Link to={to}>{label}</Link>
+                <Link to={to} className={styles.link}>{label}</Link>
               </LI>
             ))}
           </UL>

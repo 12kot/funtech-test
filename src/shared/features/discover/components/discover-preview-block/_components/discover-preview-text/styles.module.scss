@@ -1,6 +1,15 @@
+@use 'shared/styles/breakpoints' as br;
+
 .container {
   display: flex;
   flex-direction: column;
+
+  .title {
+    @media screen and (max-width: br.$mobile) {
+      letter-spacing: -2px;
+      text-align: center;
+    }
+  }
 
   .subtitle {
     margin-top: 28px;
@@ -10,6 +19,16 @@
     .bonus {
       font-size: var(--p-size);
       line-height: var(--p-height);
+      font-family: var(--font-family-secondary);
+    }
+
+    @media screen and (max-width: br.$tablet) {
+      margin-top: 15px;
+    }
+
+    @media screen and (max-width: br.$mobile) {
+      margin-top: 16px;
+      text-align: center;
     }
   }
 }

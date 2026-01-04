@@ -11,9 +11,60 @@
     @media screen and (max-width: br.$tablet) {
       margin-top: 21px;
     }
+
+    @media screen and (max-width: br.$mobile) {
+      margin-top: 48px;
+    }
+  }
+
+  .link {
+    svg {
+      display: flex;
+      width: 24px;
+      height: 24px;
+
+      path {
+        transition: 0.3s fill;
+      }
+
+      @media screen and (max-width: br.$tablet) {
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    &:hover {
+      svg path {
+        fill: var(--fill-primary);
+      }
+    }
+  }
+
+  .socialNetworkLinks {
+    gap: 10px !important;
+  }
+
+  .navigationLinks {
+    align-items: flex-start;
+    margin-top: 32px;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .copyright {
+    width: 100%;
+    margin-top: 26px;
+    text-align: center;
+    color: var(--text-hint);
   }
 
   @media screen and (max-width: br.$tablet) {
     padding: 60px var(--page-padding-horizontal);
+  }
+
+  @media screen and (max-width: br.$mobile) {
+    display: flex;
+    flex-direction: column;
+    padding: 52px var(--page-padding-horizontal) 40px;
   }
 }

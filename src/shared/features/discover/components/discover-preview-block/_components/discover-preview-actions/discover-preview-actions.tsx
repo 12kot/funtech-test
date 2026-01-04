@@ -12,7 +12,7 @@ export const DiscoverPreviewActions: React.FC = () => {
       <Button size="m" className={styles.exploreMore}>
         {t('preview.actions.exploreMore')}
       </Button>
-      <Button colorScheme="outlined" size="m">
+      <Button colorScheme="outlined" size="m" className={styles.createNFT}>
         {t('preview.actions.createNFT')}
       </Button>
     </section>

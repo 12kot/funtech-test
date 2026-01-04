@@ -10,4 +10,17 @@
   @media screen and (max-width: br.$tablet) {
     width: 263px;
   }
+
+  @media screen and (max-width: br.$mobile) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -84px;
+    width: calc(100% - 64px);
+    height: 130px;
+  }
+}
+
+.image {
+   border-radius: 15.79px!important;
 }

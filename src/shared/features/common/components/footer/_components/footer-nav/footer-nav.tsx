@@ -1,19 +1,11 @@
-import { ReactNode } from 'react'
-
 import { cn } from 'shared/utils'
 import { LI, Link, UL } from 'shared/components/ui'
 
 import styles from './styles.module.scss'
-
-interface NavLink {
-  to: string
-  label: ReactNode
-  target?: string
-  linkClassName?: string
-}
+import { FooterNavLink } from '../../types'
 
 interface Props {
-  links: NavLink[]
+  links: FooterNavLink[]
   className?: string
 }
 

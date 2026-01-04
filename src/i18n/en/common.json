@@ -12,6 +12,7 @@
   
   "footer": {
     "copyright": "© {{ year }}",
+    "copyrightFull": "© {{ year }} DiveSea All Rights Reserved.",
     
     "navigation": {
       "privacyPolicy": "Privacy Policy",

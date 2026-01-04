@@ -9,7 +9,7 @@ export const DiscoverPreviewText: React.FC = () => {
 
   return (
     <section className={styles.container}>
-      <H1>{t('preview.title')}</H1>
+      <H1 className={styles.title}>{t('preview.title')}</H1>
       <P className={styles.subtitle}>
         <Trans components={{ b: <B className={styles.bonus} /> }}>{t('preview.subtitle')}</Trans>
       </P>
