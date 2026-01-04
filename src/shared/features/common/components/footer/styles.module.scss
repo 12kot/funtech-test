@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+  padding: 88px var(--page-padding-horizontal) 86px;
+  background-color: var(--surface-primary-alt);
+
+  .divider {
+    margin-top: 25px;
+  }
+}

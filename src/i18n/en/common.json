@@ -1,0 +1,23 @@
+{
+  "header": {
+    "connectWallet": "Connect wallet",
+
+    "navigation": {
+      "discover": "Discover",
+      "creators": "Creators",
+      "sell": "Sell",
+      "stats": "Stats"
+    }
+  },
+  
+  "footer": {
+    "copyright": "© {{ year }}",
+    
+    "navigation": {
+      "privacyPolicy": "Privacy Policy",
+      "termsConditions": "Term & Conditions",
+      "aboutUs": "About Us",
+      "contact": "Contact"
+    }
+  }
+}

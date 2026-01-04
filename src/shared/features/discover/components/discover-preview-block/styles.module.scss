@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  background-color: var(--surface-primary);
+  padding: 115px 0 154px var(--page-padding-horizontal);
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 49px;
+
+  .content {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}

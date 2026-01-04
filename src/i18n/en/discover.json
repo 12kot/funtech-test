@@ -1,0 +1,36 @@
+{
+  "preview": {
+    "title": "Discover And Create NFTs",
+    "subtitle": "Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs And Get a <b>$20 bonus.</b>",
+
+    "actions": {
+      "exploreMore": "Explore More",
+      "createNFT": "Create NFT"
+    },
+
+    "stats": {
+      "artists": {
+        "title": "430K+",
+        "subtitle": "Art Works"
+      },
+      "creators": {
+        "title": "159K+",
+        "subtitle": "Creators"
+      },
+      "collections": {
+        "title": "87K+",
+        "subtitle": "Collections"
+      }
+    }
+  },
+
+  "banner": {
+    "title": "Create and Sell NFTs",
+    "subtitle": "World’s Largest NFT Place",
+
+    "actions": {
+      "exploreMore": "Explore More",
+      "sellArtwork": "Sell Artwork"
+    }
+  }
+}

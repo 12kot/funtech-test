@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  .navLink {
+    text-transform: none;
+    color: var(--text-caption);
+  }
+}

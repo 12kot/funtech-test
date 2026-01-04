@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+
+  overflow-x: hidden;
+  max-width: var(--max-width);
+  background-color: var(--surface-primary);
+}
+
+* {
+  font-family: var(--font-family-primary);
+  font-optical-sizing: auto;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}

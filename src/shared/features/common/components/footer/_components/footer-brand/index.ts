@@ -1,0 +1,1 @@
+export * from './footer-brand'

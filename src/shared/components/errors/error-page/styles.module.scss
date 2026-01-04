@@ -1,0 +1,44 @@
+.container {
+  height: calc(100dvh - var(--padding-top));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 96px;
+    height: 96px;
+  }
+
+  .title {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .logo {
+    position: absolute;
+    bottom: var(--padding-bottom);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96px;
+  }
+
+  .button {
+    margin-top: 16px;
+  }
+}
+
+.errorState {
+  height: 100%;
+  align-items: center;
+  justify-content: center!important;
+}

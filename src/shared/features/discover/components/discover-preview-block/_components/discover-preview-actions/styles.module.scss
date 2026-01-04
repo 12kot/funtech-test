@@ -1,0 +1,11 @@
+.container {
+  margin-top: 44px;
+
+  gap: 22px;
+  display: flex;
+  align-items: center;
+
+  .exploreMore {
+    font-family: var(--font-family-primary);
+  }
+}

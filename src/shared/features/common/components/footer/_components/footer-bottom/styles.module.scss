@@ -1,0 +1,30 @@
+.container {
+  margin-top: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .copyright {
+    font-size: 1.0625rem;
+    line-height: 1.5625;
+    color: var(--text-hint);
+    font-family: var(--font-family-secondary);
+  }
+
+  .link {
+    svg {
+      width: 24px;
+      height: 24px;
+      
+      path {
+        transition: 0.3s fill;
+      }
+    }
+
+    &:hover {
+      svg path {
+        fill: var(--fill-primary);
+      }
+    }
+  }
+}

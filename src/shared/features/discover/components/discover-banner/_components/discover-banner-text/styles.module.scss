@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    color: var(--text-primary-invert);
+  }
+
+  .subtitle {
+    opacity: 0.6;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    color: var(--text-disabled);
+  }
+}

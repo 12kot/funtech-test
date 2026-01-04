@@ -1,0 +1,85 @@
+.font-primary {
+  font-family: var(--font-family-primary);
+}
+
+.default {
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.h1 {
+  font-size: var(--h1-size);
+  line-height: var(--h1-height);
+  font-weight: var(--h1-weight);
+
+  color: var(--text-primary);
+
+  @extend .font-primary;
+  @extend .default;
+}
+
+.h2 {
+  font-size: var(--h2-size);
+  line-height: var(--h2-height);
+  font-weight: var(--h2-weight);
+
+  color: var(--text-primaryk);
+
+  @extend .font-primary;
+  @extend .default;
+}
+
+.h3 {
+  font-size: var(--h3-size);
+  line-height: var(--h3-height);
+  font-weight: var(--h3-weight);
+
+  color: var(--text-primary);
+
+  @extend .font-primary;
+  @extend .default;
+}
+
+.h4 {
+  font-size: var(--h4-size);
+  line-height: var(--h4-height);
+  font-weight: var(--h4-weight);
+
+  color: var(--text-primary);
+
+  @extend .font-primary;
+  @extend .default;
+}
+
+.b {
+  font-size: var(--b-size);
+  line-height: var(--b-height);
+  font-weight: var(--b-weight);
+
+  color: var(--text-primary);
+
+  @extend .font-primary;
+  @extend .default;
+}
+
+.p {
+  font-size: var(--p-size);
+  line-height: var(--p-height);
+  font-weight: var(--p-weight);
+
+  color: var(--text-primary);
+
+  @extend .font-primary;
+  @extend .default;
+}
+
+.span {
+  font-size: var(--span-size);
+  line-height: var(--span-height);
+  font-weight: var(--span-weight);
+
+  color: var(--text-muted);
+
+  @extend .font-primary;
+  @extend .default;
+}

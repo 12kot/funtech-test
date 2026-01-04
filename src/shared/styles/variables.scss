@@ -1,0 +1,72 @@
+:root {
+  --max-width: 3840px;
+
+  --font-family-primary: 'Poppins', sans-serif;
+  --font-family-secondary: 'Inter', sans-serif;
+  --font-family-tertiary: 'Outfit', sans-serif;
+  --font-family-quaternary: 'Public Sans', sans-serif;
+
+  --surface-base: #ffffff;
+  --surface-primary: #f9f9f9;
+  --surface-secondary: #f1f1f1;
+  --surface-primary-alt: #141416;
+
+  --fill-primary: #ffffff;
+
+  --text-black: #000000;
+  --text-primary: #141416;
+  --text-secondary: #606060;
+  --text-tertiary: #676767;
+  --text-quaternary: #848586;
+  --text-muted: #94a3b8;
+  --text-hint: #999999;
+  --text-caption: #b9b9b9;
+  --text-placeholder: #c5c5c5;
+  --text-disabled: #d4d4d4;
+  --text-primary-invert: #ffffff;
+
+  --button-primary: #141416;
+  --button-primary-hover: #d7d7d7;
+  --button-ghost: #ffffff;
+
+  --stroke-alt: #ffffff;
+  --stroke-primary: #000000;
+  --stroke-tertiary: #818181;
+
+  //
+
+  --stroke-focus: #040710;
+
+  --button-primary-alt: #23292d;
+  --button-primary-alt-hover: #343d46;
+
+  --h1-weight: 600;
+  --h1-size: 4.75rem;
+  --h1-height: 5.25rem;
+
+  --h2-weight: 600;
+  --h2-size: 2.875rem;
+  --h2-height: 3rem;
+
+  --h3-weight: 600;
+  --h3-size: 2.25rem;
+  --h3-height: 2.625rem;
+
+  --h4-weight: 600;
+  --h4-size: 1.625rem;
+  --h4-height: 1.875rem;
+
+  --p-weight: 400;
+  --p-size: 1.125rem;
+  --p-height: 1.75rem;
+
+  --b-weight: 500;
+  --b-size: 1rem;
+  --b-height: 1.125rem;
+
+  --span-weight: 400;
+  --span-size: 0.6875rem;
+  --span-height: 100%;
+
+  --page-padding-horizontal: 97px;
+}
